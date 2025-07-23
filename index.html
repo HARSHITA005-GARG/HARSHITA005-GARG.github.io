@@ -3,31 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name | Space Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="preload" href="fonts/DeathStar-VmWB.ttf" as="font" type="font/ttf" crossorigin>
+  <title>UI/UX Designer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <canvas id="bg"></canvas>
+  <!-- Header Section -->
   <header>
-    <h1>Hello, Recruiters!</h1>
-    <p>My Name is Harshita</p>
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Machine Learning Engineer</h1>
+        <p>Hi, I am <span class="highlight">Harshita</span>.</p>
+        <button class="main-btn">Download CV</button>
+        <button class="secondary-btn">Contact Me</button>
+        <div class="social-links">
+          <a href="#">[FB]</a>
+          <a href="#">[TW]</a>
+          <a href="#">[IG]</a>
+          <a href="#">[IG]</a>
+        </div>
+      </div>
+      <div class="portrait-container">
+        <div class="circle-bg"></div>
+        
+        <div class="circle-fg">
+<img src="images/Image.png" alt="Profile Image" class="portrait-img">
+        </div>
+      </div>
+    </div>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <!-- Main sections: Use your visual assets here, exactly as in Figma -->
-  <main>
-    <!-- Sections: Skills, Projects, Experience, Contact as per Figma blocks -->
-  </main>
+
+  <!-- Services Section -->
+  <section id="services" class="container">
+    <h2>Services</h2>
+    <div class="services-list">
+      <div class="service-card">
+        <div class="icon">[ICON]</div>
+        <h3>UI Design</h3>
+        <p>Creating modern and user-friendly interfaces.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">[ICON]</div>
+        <h3>UX Research</h3>
+        <p>Improving user satisfaction by analyzing needs.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">[ICON]</div>
+        <h3>Prototyping</h3>
+        <p>Building interactive prototypes for testing.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">[ICON]</div>
+        <h3>Branding</h3>
+        <p>Developing visual identities that stand out.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">[ICON]</div>
+        <h3>Web Design</h3>
+        <p>Responsive design for modern websites.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">[ICON]</div>
+        <h3>App Design</h3>
+        <p>Designing seamless mobile app experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container about">
+          <div class="portrait-container">
+        <div class="circle-bg"></div>
+        
+        <div class="circle-fg">
+<img src="images/Image.png" alt="Profile Image" class="portrait-img">
+        </div>
+      </div>
+    <div class="about-content">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nulla vel pulvinar fermentum, neque erat condimentum tortor, id hendrerit erat risus eu dolor. </p>
+      <button class="main-btn">Read More</button>
+      <div class="stats">
+        <div>
+          <span>5+</span>
+          <p>Years Experience</p>
+        </div>
+        <div>
+          <span>50+</span>
+          <p>Projects</p>
+        </div>
+        <div>
+          <span>30+</span>
+          <p>Clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="container">
+    <h2>Portfolio</h2>
+    <div class="portfolio-filter">
+      <button class="active">All</button>
+      <button>Web Design</button>
+      <button>App Design</button>
+      <button>Branding</button>
+    </div>
+    <div class="portfolio-list">
+      <div class="portfolio-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>UI Design</p>
+      </div>
+      <div class="portfolio-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>Web Design</p>
+      </div>
+      <div class="portfolio-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 3">
+        <h3>Project Title 3</h3>
+        <p>App Design</p>
+      </div>
+      <!-- Add more portfolio cards as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Full Name" required/>
+      <input type="email" placeholder="Email Address" required/>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button class="main-btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
   <footer>
-    <span>© 2025 Harshita</span>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
